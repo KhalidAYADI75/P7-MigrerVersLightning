@@ -1,18 +1,15 @@
-# Salesforce DX Project: Next Steps
+# Migration de composants de Salesforce Classic vers Lightning 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Plusieurs solutions ont été proposées pour répondre aux besoins exprimés dans le cahier des charges :
+- Des solutions no code / low code  (Flow , SLDS)
+- Des solutions avec LWC .
 
-## How Do You Plan to Deploy Your Changes?
+Le repository suivant contient le code des LWC  :
+- lwc\Updatelead : <br/> 
+Permet de mettre à jour le statut d'une piste<br/> 
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- lwc\OpportunitySearch : <br/> 
+Permet de rechercher les opportunités par la saisie de quelques lettres du nom du compte<br/> 
+Affiche le résultat sous forme de tableau
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
