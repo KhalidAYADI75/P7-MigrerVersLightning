@@ -1,0 +1,10 @@
+.slds-input {
+    width:50%;
+    margin-right:5px;
+    margin-bottom:20px;
+}
+lightning-card {
+    display: block;
+    padding:10px;
+    border:1px solid lightgrey !important;
+}

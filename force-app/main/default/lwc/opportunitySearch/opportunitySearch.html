@@ -1,0 +1,17 @@
+<template>
+    <lightning-card variant="narrow" title="Search for Opportunities by Keyword" icon-name="standard:opportunity">
+      <div  class="slds-m-around_medium">
+        <label class="slds-form-element__label" for="text-input">Keyword</label>
+        <div record-id={recordId} class="slds-form-element__control">
+            <input class='slds-input' onchange={handleonchange} type="text" id="text-input"></input>
+            <button class="slds-button slds-button_brand" onclick={clickForSearch}>Search</button>
+        </div>
+        <div if:true={showMessageSearching}>
+            <div>Searching....Please wait</div>
+        </div>
+        <div  if:true={isResult}>
+          <lightning-datatable hide-checkbox-column key-field="Id" data={opportunityList} columns={columns}></lightning-datatable>
+        </div>
+      </div>
+    </lightning-card>
+  </template>
